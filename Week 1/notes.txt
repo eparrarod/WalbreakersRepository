@@ -1,3 +1,16 @@
 ArrayOrder: I stated using two loops to fill out the array. But since it was too much coe I decided to do a nested loop to traverse the array. If the element found is even, go to the next one. If it is odd, then find the next even number in the array and swap them. Repeat until the end of the array or no more even numbers are found after finding an odd number.
 
 Transpose: I had problems making my solution work because I made it in place for square matrices. It took me a few debugging attemps to realize the inputs where not always square matrices. At that point I modified it to work by creating a new matrix with the mirrored dimensions and copying the original matrix.
+
+Flip Image: Made it inplace so that the mirroring happened at the same time as swapping the values. Too me a few tries to realize the upperbound on my second loop needs to change depending on whether the length of the rows is even or odd.
+
+
+Reverse String: Effectively the same principle as mirroring the matrix.
+
+DetectCapital : Logic to determine the usage by using a flag that changes based on the presence of uppercase and lower case. It returns false whenever it detects a change from lowercase to uppercase or a change from uppercase to lowercase beyond the first character.
+
+Valid Palindrome: Similar to reversing but with a comparison rather than a swap. I preprocessed the string to remove non alphanumeric characters.
+
+Self-dividing: I wrote two loops. One for extracting the digits and one for checking if the number is divisible by each digit. I then reduced the time and memory usage by adding the divisibility check to the loop that extracts the digits.
+
+Excel Sheet column number: I made a loop that uses the index to determine the appropriate power of 26 to use for the columns. I was stuck for a while on figuring that out as I was adding an extra multiplication based on the row, which worked for inputs of size 2, but not of size 3. I didn't notice it at first because it was a multiplication for 1 on input of size 2 until it didn't work for larger inputs. 
