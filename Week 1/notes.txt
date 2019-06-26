@@ -14,3 +14,13 @@ Valid Palindrome: Similar to reversing but with a comparison rather than a swap.
 Self-dividing: I wrote two loops. One for extracting the digits and one for checking if the number is divisible by each digit. I then reduced the time and memory usage by adding the divisibility check to the loop that extracts the digits.
 
 Excel Sheet column number: I made a loop that uses the index to determine the appropriate power of 26 to use for the columns. I was stuck for a while on figuring that out as I was adding an extra multiplication based on the row, which worked for inputs of size 2, but not of size 3. I didn't notice it at first because it was a multiplication for 1 on input of size 2 until it didn't work for larger inputs. 
+
+PlusOne: I tried first doing an in place conversion of the last number and expanding the array by one. I then switched to converting the array into an integer and then back to a string but the test cases with large numbers made it too complicated so I went back to mostly inplace assition of one at the least significant digit, then snowballing the +1 whenever needed. Then if the most significant number changes to larger than 10, I create a larger array and make the appropriate copy. Lastly, I had an error where I wasnt placing the one in the correct index of the array because I used % rather than /.
+
+Power of 2: I use a loop to go over the powers of two until it matches or excedes the value of the input.
+
+Reverse Words: I made an in place extension of the reverse exercise. I loop through the string finding the spaces and updating the beginning and end of each word, then reverse it in place. I initially though of keeping track of the parity of spaces to find words, but realized that it was overcomplicating it because every time I found a space it means a new word needed to be reversed. Lastly, I reverse from the position the last space was found until the end of the String.
+
+Reverse Bowels: I bassically used an in place approach. I traverse the string from right to left and from left to right using two nested loops. The outher llop traverses from right to left, and the second loop traverses from left to right. Whenever a vowel is found the inner loop would look for the next vowel from the last position it found one at. The loops stop whenever the two tracker variables meet.
+
+FizzBuzz: Just a simple loop that checks for three % operations to determine the value to put in the array.
