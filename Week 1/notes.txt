@@ -24,3 +24,13 @@ Reverse Words: I made an in place extension of the reverse exercise. I loop thro
 Reverse Bowels: I bassically used an in place approach. I traverse the string from right to left and from left to right using two nested loops. The outher llop traverses from right to left, and the second loop traverses from left to right. Whenever a vowel is found the inner loop would look for the next vowel from the last position it found one at. The loops stop whenever the two tracker variables meet.
 
 FizzBuzz: Just a simple loop that checks for three % operations to determine the value to put in the array.
+
+HammingDistance: I use an xor operation to get the binary number represented by the difference between the two numbers. I thought this would be the answer but it wasn't as it is supposed to be the number of ones on the result from the xor operation. So I converted the number to a binary String representation and counter the 1's.
+
+Inverse: I tried using ~ but it would flip the sign bit. Thus rendering the wrong result. I decided to just convert it to a binary string and traverse the string to flip it and obtain the inverse. I realized that I don't need the actual inverse representation and just used the loop to update the new decimal representation while traversing the inverse and multiplying by the adequate powers of 2.
+
+Single number: This one was difficult in the sense that was it not because It was classified as bitwise operations I may not have been able to remember than the XOR or a number and itself is always zero. Once I remembered that it was a matter or using xor throught the array to get the result.
+
+Two-sum: I was doing the brute force approach. Then read that it was a Map problem. I read the suggestion on the two pass solution and implemented that one. Some of the test cases made me realize that my statement to check that it was not suppose to be not to use the same number used twice but the same element not used twice.
+
+Anagram: I used a map for each string and then compared the key value pairs of the maps. T is an invalid anagram of S if there is a discrepancy on the counts or a missing entry from one map on the other. The comparison (mapS.get(c) != mapT.get(c)) would return false even when the counts where the same so I replaced it by (mapS.get(c) - mapT.get(c)) != 0 
